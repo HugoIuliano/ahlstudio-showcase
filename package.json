@@ -30,7 +30,7 @@
     "mercadopago": "^3.6.1",
     "next": "16.4.0",
     "next-auth": "^5.0.0-beta.32",
-    "react": "19.2.8",
+    "react": "19.3.0",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.7.0",
     "zod": "^4.6.3"
