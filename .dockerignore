@@ -1,0 +1,6 @@
+node_modules
+.next
+.git
+local.db*
+.env*
+!.env.example

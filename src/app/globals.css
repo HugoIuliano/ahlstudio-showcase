@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/*
+ * Paleta AHL Studio (pastel):
+ *  F7EDF0 Lavender Blush · F4CBC6 Cotton Rose · F4AFAB Powder Blush
+ *  F4EEA9 Vanilla Custard · F4F482 Canary Yellow
+ * Texto escuro quente para dar contraste sobre os pastéis.
+ */
+:root {
+  --blush: #f7edf0;
+  --rose: #f4cbc6;
+  --powder: #f4afab;
+  --custard: #f4eea9;
+  --canary: #f4f482;
+
+  --background: var(--blush);
+  --foreground: #3b2326;
+  --muted: #fbf4f6;
+  --muted-foreground: #8a6b70;
+  --card: #ffffff;
+  --border: #efd9dc;
+  --primary: var(--powder);
+  --primary-foreground: #3b2326;
+  --primary-strong: #e98f8a;
+  --accent: var(--canary);
+  --accent-foreground: #3b3a1a;
+  --ring: #e98f8a;
+  --danger: #c2413b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-strong: var(--primary-strong);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --color-danger: var(--danger);
+  --color-blush: var(--blush);
+  --color-rose: var(--rose);
+  --color-powder: var(--powder);
+  --color-custard: var(--custard);
+  --color-canary: var(--canary);
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fredoka), var(--font-nunito), ui-sans-serif, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Títulos com a família display (Fredoka) */
+h1, h2, h3, .font-display {
+  font-family: var(--font-fredoka), var(--font-nunito), ui-sans-serif, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+/* Trilho de carrossel horizontal com snap e sem barra visível */
+.rail {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.rail::-webkit-scrollbar { display: none; }
+
+/* Evita "blowout" de grids no mobile: filhos de grid nunca forçam largura maior que a coluna; input de arquivo tem largura intrínseca grande no Chrome */
+.grid > * { min-width: 0; }
+input[type="file"] { max-width: 100%; }
+.rail > * { scroll-snap-align: start; flex: 0 0 auto; }
+
+/* Animação escalonada por índice (--i) */
+.stagger { animation: var(--animate-fade-up); animation-delay: calc(var(--i, 0) * 70ms); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger, .animate-float, .animate-marquee, .animate-pulse-soft { animation: none !important; }
+  .rail { scroll-behavior: auto; }
+}

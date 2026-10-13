@@ -1,0 +1,88 @@
+PROPRIETARY SOFTWARE LICENSE / LICENÇA DE SOFTWARE PROPRIETÁRIO
+
+Copyright (c) 2026 Hugo Giovanni Iuliano. All rights reserved.
+Todos os direitos reservados.
+
+-------------------------------------------------------------------------------
+ENGLISH
+-------------------------------------------------------------------------------
+
+This software, including its source code, database schema, business rules,
+pricing and production-scheduling logic, documentation, visual identity and
+all related files (the "Software"), is proprietary and confidential to the
+copyright holder. It is published solely so that prospective employers and
+reviewers can READ it to evaluate the author's work.
+
+Unless you have prior written permission from the copyright holder, you may NOT:
+
+  1. copy, clone for use, download for use, reproduce or redistribute the
+     Software, in whole or in part;
+  2. run, deploy, host or operate the Software, or any part of it, for any
+     purpose, commercial or not;
+  3. modify, translate, adapt or create derivative works based on the
+     Software, its architecture or its business logic;
+  4. use the Software, in whole or in part, in or for any product, service or
+     business, in particular any e-commerce, CRM, ERP, 3D-printing or
+     custom-manufacturing business, or any business that competes with the
+     copyright holder;
+  5. sell, sublicense, rent, lend or otherwise make the Software available to
+     third parties;
+  6. use the Software, in whole or in part, to train, fine-tune, evaluate or
+     prompt any machine-learning or artificial-intelligence model or dataset;
+  7. remove or alter this notice or any copyright notice.
+
+Viewing the Software through GitHub's web interface, and the transient copies
+needed to do so, is the only permission granted. Forking on GitHub does not
+grant any additional right; any fork remains subject to this license.
+
+No license or right is granted by implication, estoppel or otherwise. Any use
+not expressly permitted is an infringement of the copyright holder's rights
+and may result in civil and criminal liability.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+Permission requests: hugo.iuliano@gmail.com
+
+-------------------------------------------------------------------------------
+PORTUGUÊS (BRASIL)
+-------------------------------------------------------------------------------
+
+Este software, incluindo código-fonte, esquema de banco de dados, regras de
+negócio, lógica de precificação e de programação da produção, documentação,
+identidade visual e todos os arquivos relacionados (o "Software"), é
+propriedade exclusiva e confidencial do titular dos direitos autorais. Ele é
+publicado apenas para que recrutadores e avaliadores possam LÊ-LO e avaliar o
+trabalho do autor.
+
+Sem autorização prévia e por escrito do titular, é PROIBIDO:
+
+  1. copiar, clonar para uso, baixar para uso, reproduzir ou redistribuir o
+     Software, no todo ou em parte;
+  2. executar, implantar, hospedar ou operar o Software, ou parte dele, para
+     qualquer finalidade, comercial ou não;
+  3. modificar, traduzir, adaptar ou criar obras derivadas do Software, de sua
+     arquitetura ou de sua lógica de negócio;
+  4. usar o Software, no todo ou em parte, em qualquer produto, serviço ou
+     negócio, em especial de e-commerce, CRM, ERP, impressão 3D ou fabricação
+     personalizada, ou em qualquer negócio concorrente do titular;
+  5. vender, sublicenciar, alugar, emprestar ou disponibilizar o Software a
+     terceiros;
+  6. usar o Software, no todo ou em parte, para treinar, ajustar, avaliar ou
+     alimentar modelos ou bases de dados de aprendizado de máquina ou
+     inteligência artificial;
+  7. remover ou alterar este aviso ou qualquer aviso de direitos autorais.
+
+A única permissão concedida é visualizar o Software pela interface web do
+GitHub, com as cópias transitórias necessárias para isso. Um "fork" no GitHub
+não concede nenhum direito adicional e permanece sujeito a esta licença.
+
+Nenhuma licença ou direito é concedido de forma implícita. Qualquer uso não
+expressamente autorizado viola os direitos do titular, protegidos pela Lei
+nº 9.609/1998 (Lei do Software) e pela Lei nº 9.610/1998 (Lei de Direitos
+Autorais), e sujeita o infrator às sanções civis e penais cabíveis.
+
+O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIAS.
+
+Esta licença é regida pelas leis da República Federativa do Brasil.
+
+Pedidos de autorização: hugo.iuliano@gmail.com

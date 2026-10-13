@@ -1,0 +1,13 @@
+.git
+.gitignore
+node_modules
+.next
+local.db*
+tests/.tmp
+.env*
+!.env.example
+docs
+deploy
+README.md
+CLAUDE.md
+AGENTS.md

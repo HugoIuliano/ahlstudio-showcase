@@ -1,0 +1,1 @@
+ALTER TABLE `products` ADD `labor_minutes` integer DEFAULT 10 NOT NULL;
